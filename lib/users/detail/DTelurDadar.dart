@@ -77,7 +77,7 @@ class _DTelurDadarState extends State<DTelurDadar> {
                     Text('5. Setelah Menunggu 1 Menit, Telur Siap Diangkat',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w600)),
-                    Text('6. Telur Mata Sapi, Siap Disajikan',
+                    Text('6. Telur Dadar, Siap Disajikan',
                         style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.w600)),
                   ],
