@@ -4,13 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-1. `flutter pub get`
-
-2. `flutter run`
-
-OR
-
-1. `flutter run`
+`flutter pub get`
 
 This project is a starting point for a Flutter application.
 
