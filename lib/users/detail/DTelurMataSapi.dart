@@ -29,7 +29,7 @@ class _DTelurMataSapiState extends State<DTelurMataSapi> {
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Image.asset(
                   'assets/images/telurmatasapi.jpg',
-                  width: 380,
+                  fit: BoxFit.fitWidth,
                 ),
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Text('Bahan-bahan',

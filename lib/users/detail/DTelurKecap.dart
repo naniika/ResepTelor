@@ -29,7 +29,7 @@ class _DTelurKecapState extends State<DTelurKecap> {
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Image.asset(
                   'assets/images/telurkecap.jpg',
-                  height: 200,
+                  fit: BoxFit.fitWidth,
                 ),
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Text('Bahan-bahan',

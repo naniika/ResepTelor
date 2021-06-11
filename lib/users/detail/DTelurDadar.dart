@@ -29,7 +29,7 @@ class _DTelurDadarState extends State<DTelurDadar> {
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Image.asset(
                   'assets/images/telurdadar.jpg',
-                  height: 160,
+                  fit: BoxFit.fitWidth,
                 ),
                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                 Text('Bahan-bahan',
