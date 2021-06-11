@@ -21,108 +21,114 @@ class _LandingPageState extends State<LandingPage> {
             image: AssetImage('assets/background.jpg'),
           ),
         ),
-        child: Column(
+        child: ListView(
           children: [
-            Scrollbar(
-              child: Column(
-                children: [
-                  Padding(padding: EdgeInsets.symmetric(vertical: 30)),
-                  Image.asset(
-                    'assets/logo2.png',
-                    height: 90,
-                  ),
-                  Padding(padding: EdgeInsets.symmetric(vertical: 30)),
-                  FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return DTelurMataSapi();
-                          },
-                        ),
-                      );
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset(
-                          'assets/images/telurmatasapi.jpg',
-                          width: 160,
-                        ),
-                        // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Telur',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold)),
-                            Text('Mata Sapi',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold)),
-                          ],
-                        ),
-                      ],
+            Column(
+              children: [
+                Column(
+                  children: [
+                    Padding(padding: EdgeInsets.symmetric(vertical: 20)),
+                    Image.asset(
+                      'assets/logo2.png',
+                      height: 90,
                     ),
-                  ),
-                  Padding(padding: EdgeInsets.symmetric(vertical: 30)),
-                  FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return DTelurDadar();
-                          },
-                        ),
-                      );
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset(
-                          'assets/images/telurdadar.jpg',
-                          width: 160,
-                        ),
-                        // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
-                        Column(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Telur Dadar',
-                                style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold)),
-                          ],
-                        ),
-                      ],
+                    Padding(padding: EdgeInsets.symmetric(vertical: 30)),
+                    FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return DTelurMataSapi();
+                            },
+                          ),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
+                            'assets/images/telurmatasapi.jpg',
+                            width: 160,
+                          ),
+                          // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Telur',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                              Text('Mata Sapi',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Padding(padding: EdgeInsets.symmetric(vertical: 30)),
-                  FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return DTelurKecap();
-                          },
-                        ),
-                      );
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset(
-                          'assets/images/telurkecap.jpg',
-                          width: 160,
-                        ),
-                        // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
-                        Text('Telur Kecap',
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ],
+                    Padding(padding: EdgeInsets.symmetric(vertical: 30)),
+                    FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return DTelurDadar();
+                            },
+                          ),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
+                            'assets/images/telurdadar.jpg',
+                            width: 160,
+                          ),
+                          // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                          Column(
+                            // mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Telur Dadar',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
-              ),
+                    Padding(padding: EdgeInsets.symmetric(vertical: 30)),
+                    FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return DTelurKecap();
+                            },
+                          ),
+                        );
+                      },
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
+                            'assets/images/telurkecap.jpg',
+                            width: 160,
+                          ),
+                          // Padding(padding: EdgeInsets.symmetric(horizontal: 10)),
+                          Text('Telur Kecap',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
+            Padding(padding: EdgeInsets.symmetric(vertical: 50)),
           ],
         ),
       ),
